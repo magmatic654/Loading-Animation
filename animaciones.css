@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&display=swap');
+body{
+    background-color: #121212;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+.container{
+    position: absolute; 
+    /* animation-timing-function: ; */
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    transform: rotate();
+}
+
+.delay1{
+    animation-delay:0s ;
+}
+.delay2{
+    animation-delay:0.1s ;
+}
+.delay3{
+    animation-delay:0.2s ;
+}
+
+
+.circulo{
+    width: 20px;
+    height: 20px;
+    border-radius:10px;
+
+}
+
+.red{
+    background-color: #ADE8F4;
+}
+.blue{
+    background-color:#90E0EF;
+}
+
+.pink{
+    background-color:#48CAE4;
+}
+
+
+span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-iteration-count:infinite; 
+    font-size: 40px;
+    margin-top: 170px;
+}
+
+
+
+/* se queda */
+
+@keyframes colors {
+    0% {
+        color: #00B4D8;
+    }
+    50%{
+        color: #023E8A;
+    }
+    100% {
+        color: #00B4D8;
+  }
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
